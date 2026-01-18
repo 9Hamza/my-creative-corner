@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   {
@@ -40,7 +41,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto mb-8">
           {socialLinks.map((link) => (
             <a
               key={link.name}
@@ -56,6 +57,16 @@ const ContactSection = () => {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* Resume Download Button */}
+        <div className="flex justify-center">
+          <Button asChild size="lg" className="gap-2">
+            <a href="/resume.pdf" download="John_Doe_Resume.pdf">
+              <Download className="h-4 w-4" />
+              Download Resume
+            </a>
+          </Button>
         </div>
       </div>
     </section>
