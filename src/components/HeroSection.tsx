@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Gamepad2 } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,29 +14,29 @@ const HeroSection = () => {
           {/* Avatar */}
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 rounded-full bg-muted border-4 border-background shadow-lg flex items-center justify-center">
-              <span className="text-4xl font-bold text-muted-foreground">JD</span>
+              <span className="text-4xl font-bold text-muted-foreground">HB</span>
             </div>
           </div>
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            John Doe
+            Hamza Bahamdan
           </h1>
           <p className="text-xl md:text-2xl text-primary font-medium mb-6">
-            Software Developer
+            Unity Game Developer
           </p>
 
           {/* Bio */}
           <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            I'm a passionate developer with expertise in building modern web applications.
-            I love turning complex problems into simple, beautiful solutions.
-            Currently focused on full-stack development with React, TypeScript, and Node.js.
+            I'm a Unity Game Developer specializing in AR/VR, Multiplayer Systems, and Software Engineering.
+            Based in Jeddah, Saudi Arabia, I love building immersive experiences and interactive games.
+            Currently working on mobile games reaching millions of users worldwide.
           </p>
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/hamzabahamdan"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted hover:bg-muted/80 text-foreground transition-all hover:scale-110"
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/hamzabahamdan"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted hover:bg-muted/80 text-foreground transition-all hover:scale-110"
@@ -54,7 +54,16 @@ const HeroSection = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="https://itch.io/profile/hamzabahamdan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-muted hover:bg-muted/80 text-foreground transition-all hover:scale-110"
+              aria-label="itch.io"
+            >
+              <Gamepad2 className="h-5 w-5" />
+            </a>
+            <a
+              href="mailto:hamza.bahamdan@gmail.com"
               className="p-3 rounded-full bg-muted hover:bg-muted/80 text-foreground transition-all hover:scale-110"
               aria-label="Email"
             >
