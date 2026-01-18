@@ -3,31 +3,41 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with cart, checkout, and payment integration.",
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Jawabak Jawabahom",
+    role: "Unity Game Developer at Table Knight Games",
+    description: "A multiplayer trivia mobile game with over 2 million users. Developed and maintained using Unity/C#, PlayFab, Firebase, and Photon for real-time multiplayer functionality.",
+    tags: ["Unity", "C#", "PlayFab", "Firebase", "Photon"],
+    image: "/placeholder.svg",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task manager with real-time updates and team features.",
-    tags: ["TypeScript", "Next.js", "Prisma", "WebSocket"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Ghostlee",
+    role: "Unity Game Developer at Table Knight Games",
+    description: "An AR social app with Firebase backend and full localization support. Built immersive augmented reality experiences for mobile devices.",
+    tags: ["Unity", "AR", "Firebase", "Localization"],
+    image: "/placeholder.svg",
   },
   {
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with forecasts, maps, and location-based alerts.",
-    tags: ["React", "APIs", "Tailwind", "Charts"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Wanas",
+    role: "Unity Game Developer at Tamatem Games",
+    description: "Implemented real-time event systems and new gameplay features. Improved build cycle efficiency through automated weekly Android/iOS releases.",
+    tags: ["Unity", "C#", "Mobile", "CI/CD"],
+    image: "/placeholder.svg",
   },
   {
-    title: "Portfolio Generator",
-    description: "CLI tool that generates stunning portfolio websites from a config file.",
-    tags: ["Node.js", "CLI", "Templates", "Markdown"],
-    github: "https://github.com",
+    title: "League Leaderboard Web App",
+    role: "Full Stack Developer",
+    description: "Built a full-stack web application visualizing League of Legends leaderboard data via Riot API. Hosted backend on AWS EC2 and frontend on Vercel.",
+    tags: ["React", "AWS EC2", "Vercel", "Riot API"],
+    github: "https://github.com/hamzabahamdan",
+    demo: "https://example.com",
+    image: "/placeholder.svg",
+  },
+  {
+    title: "VR Experience for Ithraa Competition",
+    role: "Freelance Unity Developer (VR)",
+    description: "Developed an Oculus Quest 2 VR experience with physics-based interactions and intuitive UI for the Ithraa Competition.",
+    tags: ["Unity", "VR", "Oculus Quest 2", "Physics"],
+    image: "/placeholder.svg",
   },
 ];
 
@@ -40,60 +50,78 @@ const ProjectsSection = () => {
             Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects I've worked on. Each one taught me something new.
+            A selection of professional projects I've worked on. From mobile games reaching millions to immersive VR experiences.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-8 max-w-3xl mx-auto">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border"
+              className="group bg-card hover:shadow-lg transition-all duration-300 border-border overflow-hidden"
             >
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-2">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                        aria-label="View on GitHub"
-                      >
-                        <Github className="h-5 w-5" />
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                        aria-label="View live demo"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
-                    )}
+              <div className="md:flex">
+                {/* Project Image */}
+                <div className="md:w-1/3 bg-muted">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 md:h-full object-cover"
+                  />
+                </div>
+                
+                {/* Project Content */}
+                <CardContent className="md:w-2/3 p-6">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    <div className="flex gap-2 flex-shrink-0 ml-2">
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-foreground transition-colors"
+                          aria-label="View on GitHub"
+                        >
+                          <Github className="h-5 w-5" />
+                        </a>
+                      )}
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-foreground transition-colors"
+                          aria-label="View live demo"
+                        >
+                          <ExternalLink className="h-5 w-5" />
+                        </a>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
+                  
+                  <p className="text-sm text-primary font-medium mb-3">
+                    {project.role}
+                  </p>
+                  
+                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+              </div>
             </Card>
           ))}
         </div>

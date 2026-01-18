@@ -1,24 +1,78 @@
 const experiences = [
   {
-    company: "Tech Corp",
-    role: "Senior Software Developer",
-    period: "2022 - Present",
+    company: "Table Knight Games",
+    location: "Remote",
+    role: "Unity Game Developer",
+    period: "Mar 2023 – Present",
     description:
-      "Leading frontend development for the main product. Building scalable React applications and mentoring junior developers.",
+      "Developed and maintained Jawabak Jawabahom (2M+ users) using Unity/C#, PlayFab, Firebase, and Photon. Built and deployed Ghostlee, an AR social app with Firebase backend and localization support. Streamlined designer workflows via Firebase Remote Config for real-time updates without new builds.",
   },
   {
-    company: "StartupXYZ",
-    role: "Full Stack Developer",
-    period: "2020 - 2022",
+    company: "Tamatem Games",
+    location: "Amman, Jordan",
+    role: "Unity Game Developer",
+    period: "Apr 2024 – Oct 2024",
     description:
-      "Developed and maintained multiple web applications. Implemented CI/CD pipelines and improved deployment processes.",
+      "Implemented real-time event systems and new gameplay features for Wanas within Unity. Improved build cycle efficiency and QA validation through automated weekly Android/iOS releases.",
   },
   {
-    company: "Digital Agency",
-    role: "Frontend Developer",
-    period: "2018 - 2020",
+    company: "Tamatem Games",
+    location: "Amman, Jordan",
+    role: "Game Development Intern",
+    period: "Oct 2023 – Apr 2024",
     description:
-      "Created responsive websites and web applications for various clients. Worked closely with designers to implement pixel-perfect designs.",
+      "Collaborated in Unity networking stack migration; contributed reviewed PRs enhancing delivery speed. Gained experience with AWS, SignalR, RabbitMQ, and Microsoft Orleans in distributed game systems.",
+  },
+  {
+    company: "Ithraa Competition",
+    location: "Remote, Saudi Arabia",
+    role: "Freelance Unity Developer (VR)",
+    period: "Jan 2023 – Feb 2023",
+    description:
+      "Developed an Oculus Quest 2 VR experience with physics-based interactions and intuitive UI.",
+  },
+  {
+    company: "Digipen Institute of Technology",
+    location: "Riyadh, Saudi Arabia",
+    role: "Game Programming Instructor (Gamers8 GameDevZone)",
+    period: "Jul 2023 – Sep 2023",
+    description:
+      "Taught fundamentals of game programming in p5.js to a class of 25 students.",
+  },
+  {
+    company: "Bupa Arabia",
+    location: "Jeddah, Saudi Arabia",
+    role: "Software Development Intern",
+    period: "Jun 2021 – Aug 2021",
+    description:
+      "Ported C# libraries to Java, improving internal software compatibility.",
+  },
+];
+
+const education = [
+  {
+    institution: "University of Tulsa",
+    location: "Tulsa, OK",
+    degree: "B.S. in Computer Science",
+    period: "May 2022",
+  },
+  {
+    institution: "Metropolia University of Applied Sciences",
+    location: "Helsinki, Finland",
+    degree: "Game Development Certificate (6 months)",
+    period: "Apr 2025",
+  },
+  {
+    institution: "Saudi Digital Academy",
+    location: "Jeddah, Saudi Arabia",
+    degree: "Advanced Game Dev Bootcamp (4 months)",
+    period: "Apr 2023",
+  },
+  {
+    institution: "Saudi Digital Academy (with Coding Dojo)",
+    location: "Jeddah, Saudi Arabia",
+    degree: "Beginner Game Dev Bootcamp (4 months)",
+    period: "Nov 2022",
   },
 ];
 
@@ -35,26 +89,17 @@ const ExperienceSection = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto mb-16">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
+            <div className="absolute left-0 md:left-4 top-0 bottom-0 w-0.5 bg-border" />
 
             {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className={`relative mb-8 last:mb-0 ${
-                  index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2 md:ml-auto"
-                }`}
-              >
+              <div key={index} className="relative mb-8 last:mb-0 pl-8 md:pl-12">
                 {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full bg-primary border-4 border-background" />
+                <div className="absolute left-0 md:left-4 transform -translate-x-1/2 w-3 h-3 rounded-full bg-primary border-4 border-background" />
 
-                <div
-                  className={`ml-6 md:ml-0 ${
-                    index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                  } p-6 bg-card rounded-lg border border-border hover:shadow-md transition-shadow`}
-                >
+                <div className="p-6 bg-card rounded-lg border border-border hover:shadow-md transition-shadow">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                     <h3 className="text-lg font-semibold text-foreground">
                       {exp.role}
@@ -63,7 +108,8 @@ const ExperienceSection = () => {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-primary font-medium mb-2">{exp.company}</p>
+                  <p className="text-primary font-medium mb-1">{exp.company}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{exp.location}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {exp.description}
                   </p>
@@ -71,6 +117,26 @@ const ExperienceSection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Education Section */}
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold text-foreground mb-4">Education</h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          {education.map((edu, index) => (
+            <div
+              key={index}
+              className="p-4 bg-card rounded-lg border border-border hover:shadow-md transition-shadow"
+            >
+              <h4 className="font-semibold text-foreground">{edu.degree}</h4>
+              <p className="text-primary text-sm font-medium">{edu.institution}</p>
+              <p className="text-muted-foreground text-sm">
+                {edu.location} • {edu.period}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

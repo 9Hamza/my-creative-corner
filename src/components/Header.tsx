@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -7,7 +7,15 @@ const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
+  { href: "#games", label: "Games" },
   { href: "#contact", label: "Contact" },
+];
+
+const socialLinks = [
+  { href: "https://github.com/hamzabahamdan", icon: Github, label: "GitHub" },
+  { href: "https://linkedin.com/in/hamzabahamdan", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://itch.io/profile/hamzabahamdan", icon: Gamepad2, label: "itch.io" },
+  { href: "mailto:hamza.bahamdan@gmail.com", icon: Mail, label: "Email" },
 ];
 
 const Header = () => {
@@ -48,7 +56,7 @@ const Header = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            Portfolio
+            Hamza B.
           </a>
 
           {/* Desktop Navigation */}
@@ -65,6 +73,22 @@ const Header = () => {
             ))}
           </ul>
 
+          {/* Desktop Social Links */}
+          <div className="hidden md:flex items-center gap-2">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.label !== "Email" ? "_blank" : undefined}
+                rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
+                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label={link.label}
+              >
+                <link.icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
+
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
@@ -78,18 +102,34 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <ul className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <button
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium w-full text-left"
+          <div className="md:hidden mt-4 pb-4 animate-fade-in">
+            <ul className="flex flex-col gap-4 mb-4">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <button
+                    onClick={() => scrollToSection(link.href)}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium w-full text-left"
+                  >
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <div className="flex items-center gap-4 pt-4 border-t border-border">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.label !== "Email" ? "_blank" : undefined}
+                  rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
+                  className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label={link.label}
                 >
-                  {link.label}
-                </button>
-              </li>
-            ))}
-          </ul>
+                  <link.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </header>

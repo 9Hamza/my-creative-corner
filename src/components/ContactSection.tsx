@@ -1,36 +1,36 @@
-import { Github, Linkedin, Mail, Twitter, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/hamzabahamdan",
     icon: Github,
-    username: "@johndoe",
+    username: "@hamzabahamdan",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/johndoe",
+    href: "https://linkedin.com/in/hamzabahamdan",
     icon: Linkedin,
-    username: "John Doe",
+    username: "Hamza Bahamdan",
   },
   {
-    name: "Twitter",
-    href: "https://twitter.com/johndoe",
-    icon: Twitter,
-    username: "@johndoe",
+    name: "itch.io",
+    href: "https://itch.io/profile/hamzabahamdan",
+    icon: Gamepad2,
+    username: "hamzabahamdan",
   },
   {
     name: "Email",
-    href: "mailto:hello@johndoe.dev",
+    href: "mailto:hamza.bahamdan@gmail.com",
     icon: Mail,
-    username: "hello@johndoe.dev",
+    username: "hamza.bahamdan@gmail.com",
   },
 ];
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -62,7 +62,7 @@ const ContactSection = () => {
         {/* Resume Download Button */}
         <div className="flex justify-center">
           <Button asChild size="lg" className="gap-2">
-            <a href="/resume.pdf" download="John_Doe_Resume.pdf">
+            <a href="/resume.pdf" download="Hamza_Bahamdan_Resume.pdf">
               <Download className="h-4 w-4" />
               Download Resume
             </a>

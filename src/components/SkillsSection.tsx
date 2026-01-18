@@ -1,20 +1,29 @@
 const skillCategories = [
   {
+    title: "Engines",
+    skills: ["Unity (AR/VR, URP, Multiplayer)"],
+  },
+  {
     title: "Languages",
-    skills: ["JavaScript", "TypeScript", "Python", "Go", "SQL"],
+    skills: ["C#", "Java", "JavaScript", "HTML/CSS", "Bash"],
   },
   {
-    title: "Frontend",
-    skills: ["React", "Next.js", "Vue.js", "Tailwind CSS", "HTML/CSS"],
+    title: "Tools & Services",
+    skills: ["PlayFab", "Firebase", "Photon", "AdMob", "Google Sheets API", "Git", "JetBrains Rider"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Redis"],
+    title: "Cloud",
+    skills: ["AWS (EC2)", "Vercel", "Remote Config"],
   },
   {
-    title: "Tools & Others",
-    skills: ["Git", "Docker", "AWS", "Linux", "CI/CD"],
+    title: "Other",
+    skills: ["Version Control", "Tools Programming", "Debugging & Optimization"],
   },
+];
+
+const certifications = [
+  "Unity Certified Associate: Game Developer",
+  "Unity Certified Associate: Programmer",
 ];
 
 const SkillsSection = () => {
@@ -30,7 +39,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {skillCategories.map((category, index) => (
             <div key={index} className="text-center">
               <h3 className="text-lg font-semibold text-foreground mb-4">
@@ -48,6 +57,23 @@ const SkillsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Certifications */}
+        <div className="max-w-2xl mx-auto text-center">
+          <h3 className="text-lg font-semibold text-foreground mb-4">
+            Certifications
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {certifications.map((cert) => (
+              <span
+                key={cert}
+                className="px-4 py-2 text-sm bg-primary/10 text-primary rounded-lg font-medium"
+              >
+                {cert}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
