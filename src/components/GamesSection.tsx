@@ -60,7 +60,7 @@ const GamesSection = () => {
         <div className="text-center">
           <Button asChild size="lg" className="gap-2">
             <a
-              href="https://itch.io/profile/hamzabahamdan"
+              href="https://hamboozy.itch.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
