@@ -15,10 +15,10 @@ const Index = () => {
       <main>
         <HeroSection />
         <ProjectsSection />
+        <ExperienceSection />
         <SideProjectsSection />
         <GamesSection />
         <SkillsSection />
-        <ExperienceSection />
         <ContactSection />
       </main>
       <Footer />
