@@ -5,7 +5,7 @@ const experiences = [
     role: "Unity Game Developer",
     period: "Mar 2023 – Present",
     description:
-      "Developed and maintained Jawabak Jawabahom (2M+ users) using Unity/C#, PlayFab, Firebase, and Photon. Built and deployed Ghostlee, an AR social app with Firebase backend and localization support. Streamlined designer workflows via Firebase Remote Config for real-time updates without new builds.",
+      "Worked on and maintained Jawabak Jawabahom (2M+ users) using Unity/C#, PlayFab, Firebase, and Photon. Helped build and deploy Ghostlee, an AR social app with Firebase backend and localization support. Streamlined designer workflows via Firebase Remote Config for real-time updates without new builds.",
   },
   {
     company: "Tamatem Games",
@@ -13,7 +13,7 @@ const experiences = [
     role: "Unity Game Developer",
     period: "Apr 2024 – Oct 2024",
     description:
-      "Implemented real-time event systems and new gameplay features for Wanas within Unity. Improved build cycle efficiency and QA validation through automated weekly Android/iOS releases.",
+      "Connected server authoritative game logic with the Unity frontend, ensuring smooth multiplayer experiences. Implemented new gameplay features.",
   },
   {
     company: "Tamatem Games",
@@ -29,7 +29,7 @@ const experiences = [
     role: "Freelance Unity Developer (VR)",
     period: "Jan 2023 – Feb 2023",
     description:
-      "Developed an Oculus Quest 2 VR experience with physics-based interactions and intuitive UI.",
+      "Implemented Oculus Quest 2 VR experiences with physics-based interactions.",
   },
   {
     company: "Digipen Institute of Technology",
