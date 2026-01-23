@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} John Doe. Built with passion.
+            © {currentYear} Hamza Bahamdan.
           </p>
         </div>
       </div>

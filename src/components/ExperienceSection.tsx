@@ -37,7 +37,7 @@ const experiences = [
     role: "Game Programming Instructor (Gamers8 GameDevZone)",
     period: "Jul 2023 – Sep 2023",
     description:
-      "Taught fundamentals of game programming in p5.js to a class of 25 students.",
+      "Helped teach fundamentals of game programming in p5.js to a class of 25+ students. Guided students through game projects and provided constructive feedback.",
   },
   {
     company: "Bupa Arabia",

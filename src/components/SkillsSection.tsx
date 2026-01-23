@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Cloud",
-    skills: ["AWS (EC2)", "Vercel", "Remote Config"],
+    skills: ["AWS (EC2)", "Vercel", "Remote Config", "Azure Functions"],
   },
   {
     title: "Other",
