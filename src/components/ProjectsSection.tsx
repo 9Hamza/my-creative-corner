@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Jawabak Jawabahom",
     role: "Unity Game Developer at Table Knight Games",
-    description: "Jawabak Jawabahom is a large-scale multiplayer trivia mobile game with over 2 million users. I'm contributing to the ongoing development, feature implementation, and maintenance of the live game using Unity/C#, PlayFab, Firebase, and Photon.",
+    description: "Jawabak Jawabahom is a large-scale multiplayer trivia mobile game with over 2 million users. I'm contributing to the ongoing development, feature implementation, and maintenance of the live game.",
     tags: ["Unity", "C#", "PlayFab", "Firebase", "Photon", "Mobile", "Azure"],
     image: "/JJ2024.png",
   },

@@ -21,7 +21,7 @@ const projects = [
   {
     title: "IAP Purchases Integration",
     role: "Freelance Unity Developer",
-    description: "Add in-app purchase functionality with restoring purchases if needed to an existing Unity mobile, enabling players to buy virtual currency and items.",
+    description: "Implemented in-app purchase systems for an existing Unity mobile application, supporting virtual currency and item purchases, with full purchase restoration handling.",
     tags: ["Unity", "Mobile", "Firebase Auth", "Firebase Firestore"],
     image: "/iapprojectshowcase.jpg",
   }
