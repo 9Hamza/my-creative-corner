@@ -7,21 +7,21 @@ const projects = [
     role: "Unity Game Developer at Table Knight Games",
     description: "Jawabak Jawabahom is a large-scale multiplayer trivia mobile game with over 2 million users. I'm contributing to the ongoing development, feature implementation, and maintenance of the live game using Unity/C#, PlayFab, Firebase, and Photon.",
     tags: ["Unity", "C#", "PlayFab", "Firebase", "Photon", "Mobile", "Azure"],
-    image: "/public/JJ2024.png",
+    image: "/JJ2024.png",
   },
   {
     title: "Ghostlee",
     role: "Unity Game Developer at Table Knight Games",
     description: "An AR social app with Firebase backend and full localization support. Built immersive augmented reality experiences for mobile devices that utilize real GPS data.",
     tags: ["Unity", "AR", "Firebase", "Localization", "Mobile"],
-    image: "/public/GhostleeProject.png",
+    image: "/GhostleeProject.png",
   },
   {
     title: "Wanas",
     role: "Unity Game Developer at Tamatem Games",
     description: "Connected server authoritative game logic with the Unity frontend, ensuring smooth multiplayer experiences. Implemented new gameplay features. ",
     tags: ["Unity", "C#", "Mobile", "AWS EC2", "SignalR", "Photon"],
-    image: "/public/WanasProject.png",
+    image: "/WanasProject.png",
   }
 ];
 

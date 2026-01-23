@@ -9,21 +9,21 @@ const projects = [
     tags: ["React", "AWS EC2", "Vercel", "Riot API"],
     github: "https://github.com/9Hamza/riot-inting-tracker",
     demo: "https://inter-of-the-day-client.vercel.app/",
-    image: "/public/InterOfTheDayProject.png",
+    image: "/InterOfTheDayProject.png",
   },
   {
     title: "VR Interactive Experience",
     role: "Freelance Unity Developer (VR)",
     description: "Helped develop an Oculus Quest 2 VR experience with physics-based interactions for a client participating in one of Ithraa's competitions.",
     tags: ["Unity", "VR", "Oculus Quest 2", "Physics"],
-    image: "/public/vrprojectshowcase.jpg",
+    image: "/vrprojectshowcase.jpg",
   },
   {
     title: "IAP Purchases Integration",
     role: "Freelance Unity Developer",
     description: "Add in-app purchase functionality with restoring purchases if needed to an existing Unity mobile, enabling players to buy virtual currency and items.",
     tags: ["Unity", "Mobile", "Firebase Auth", "Firebase Firestore"],
-    image: "/public/iapprojectshowcase.jpg",
+    image: "/iapprojectshowcase.jpg",
   }
 ];
 
