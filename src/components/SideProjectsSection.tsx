@@ -3,25 +3,27 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "Jawabak Jawabahom",
-    role: "Unity Game Developer at Table Knight Games",
-    description: "Jawabak Jawabahom is a large-scale multiplayer trivia mobile game with over 2 million users. I'm contributing to the ongoing development, feature implementation, and maintenance of the live game using Unity/C#, PlayFab, Firebase, and Photon.",
-    tags: ["Unity", "C#", "PlayFab", "Firebase", "Photon", "Mobile", "Azure"],
-    image: "/public/JJ2024.png",
+    title: "League Leaderboard Web App",
+    role: "Full Stack Developer",
+    description: "Built a full-stack web application visualizing League of Legends leaderboard data via Riot API. Hosted backend on AWS EC2 and frontend on Vercel.",
+    tags: ["React", "AWS EC2", "Vercel", "Riot API"],
+    github: "https://github.com/9Hamza/riot-inting-tracker",
+    demo: "https://inter-of-the-day-client.vercel.app/",
+    image: "/public/InterOfTheDayProject.png",
   },
   {
-    title: "Ghostlee",
-    role: "Unity Game Developer at Table Knight Games",
-    description: "An AR social app with Firebase backend and full localization support. Built immersive augmented reality experiences for mobile devices that utilize real GPS data.",
-    tags: ["Unity", "AR", "Firebase", "Localization", "Mobile"],
-    image: "/public/GhostleeProject.png",
+    title: "VR Interactive Experience",
+    role: "Freelance Unity Developer (VR)",
+    description: "Helped develop an Oculus Quest 2 VR experience with physics-based interactions for a client participating in one of Ithraa's competitions.",
+    tags: ["Unity", "VR", "Oculus Quest 2", "Physics"],
+    image: "/public/vrprojectshowcase.jpg",
   },
   {
-    title: "Wanas",
-    role: "Unity Game Developer at Tamatem Games",
-    description: "Connected server authoritative game logic with the Unity frontend, ensuring smooth multiplayer experiences. Implemented new gameplay features. ",
-    tags: ["Unity", "C#", "Mobile", "AWS EC2", "SignalR", "Photon"],
-    image: "/public/WanasProject.png",
+    title: "IAP Purchases Integration",
+    role: "Freelance Unity Developer",
+    description: "Add in-app purchase functionality with restoring purchases if needed to an existing Unity mobile, enabling players to buy virtual currency and items.",
+    tags: ["Unity", "Mobile", "Firebase Auth", "Firebase Firestore"],
+    image: "/public/iapprojectshowcase.jpg",
   }
 ];
 
@@ -31,10 +33,10 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Projects
+            Side Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of professional projects I've worked on.
+            A selection of freelance & personal projects.
           </p>
         </div>
 
