@@ -45,8 +45,7 @@ const HeroSection = () => {
           {/* Bio */}
           <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
             I'm a Unity Game Developer focused on building interactive games and immersive experiences across mobile, PC, 
-            and AR/VR platforms. Based in Jeddah & Riyadh, Saudi Arabia, I work on multiplayer systems and scalable game architectures
-            for projects to reach millions of users worldwide.
+            and AR/VR platforms. Based in Jeddah & Riyadh, Saudi Arabia, I work on multiplayer systems and scalable game architectures.
           </p>
 
           {/* Social Links */}
