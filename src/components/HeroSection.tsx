@@ -39,13 +39,13 @@ const HeroSection = () => {
             Hamza Bahamdan
           </h1>
           <p className="text-xl md:text-2xl text-primary font-medium mb-6">
-            Unity Game Developer
+            Software Engineer | Unity Game Developer
           </p>
 
           {/* Bio */}
           <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            I'm a Unity Game Developer focused on building interactive games and immersive experiences across mobile, PC, 
-            and AR/VR platforms. Based in Jeddah & Riyadh, Saudi Arabia, I work on multiplayer systems and scalable game architectures.
+            I build interactive games, web apps, immersive experiences, and software systems across mobile, PC, 
+            and AR/VR platforms. Based in Jeddah & Riyadh, Saudi Arabia, I work on multiplayer systems and scalable architectures.
           </p>
 
           {/* Social Links */}
