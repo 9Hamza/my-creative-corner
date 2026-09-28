@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 const games = [
   {
     title: "Game Jam Projects",
-    description: "Various game jam entries created under time constraints, showcasing rapid prototyping and creative problem-solving skills.",
-    image: "/placeholder.svg",
+    description: "Various game jam entries created under time constraints, showcasing rapid prototyping and creative problem-solving skills. Pictured: Cold Escape (ASM Game Jam 2025); also No Time to Paws (GameZanga 13) and Rotygon.",
+    image: "/GameJamProjects.jpg",
   },
   {
     title: "Bootcamp Projects",
-    description: "Games developed during the Saudi Digital Academy bootcamp, demonstrating fundamentals of game development and Unity expertise.",
-    image: "/placeholder.svg",
+    description: "Games developed during the Saudi Digital Academy bootcamp, demonstrating fundamentals of game development and Unity expertise. Pictured: Shadow's Tale; also Perception is Reality.",
+    image: "/BootcampProjects.jpg",
   },
 ];
 
