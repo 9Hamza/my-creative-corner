@@ -3,11 +3,35 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "Shine Details",
+    role: "Design & Development",
+    description: "A bilingual Arabic/English landing page for a car-detailing centre in Jeddah. A photoreal car, rendered in Blender, turns as you scroll to show each service, and bookings go straight to WhatsApp.",
+    tags: ["Next.js", "TypeScript", "Blender", "Arabic / English", "Vercel"],
+    demo: "https://shine-details-site.vercel.app/en",
+    image: "/ShineDetailsProject.jpg",
+  },
+  {
+    title: "Qaddim",
+    role: "Full Stack Developer",
+    description: "Tailors a LaTeX résumé to a job posting without touching the template. Each edit is proposed as a reviewable change, a second Claude pass checks it against the original so nothing is invented, and the output must still compile. Arabic and English interface.",
+    tags: ["Next.js", "TypeScript", "Claude API", "PostgreSQL", "LaTeX"],
+    demo: "https://resume-tailor-blond-eight.vercel.app/",
+    image: "/QaddimProject.jpg",
+  },
+  {
+    title: "Tawoo Restaurant",
+    role: "Web Developer",
+    description: "An Arabic-first website for a charcoal-grilled chicken restaurant in Jeddah: full menu with prices, opening hours, location, and ordering through HungerStation.",
+    tags: ["Astro", "Tailwind CSS", "GSAP", "Arabic RTL"],
+    demo: "https://tawoo-restaurant-website.vercel.app/",
+    image: "/TawooProject.jpg",
+  },
+  {
     title: "League Leaderboard Web App",
     role: "Full Stack Developer",
     description: "Built a full-stack web application visualizing League of Legends leaderboard data via Riot API. Hosted backend on AWS EC2 and frontend on Vercel.",
-    tags: ["React", "AWS EC2", "Vercel", "Riot API"],
-    github: "https://github.com/9Hamza/riot-inting-tracker",
+    tags: ["React", "Express", "AWS EC2", "Vercel", "Riot API"],
+    github: "https://github.com/9Hamza/riot-api-analytics-tool",
     demo: "https://inter-of-the-day-client.vercel.app/",
     image: "/InterOfTheDayProject.png",
   },

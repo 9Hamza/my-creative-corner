@@ -5,7 +5,7 @@ const experiences = [
     role: "Unity Game Developer",
     period: "Mar 2023 – Present",
     description:
-      "Worked on and maintained Jawabak Jawabahom (2M+ users) using Unity/C#, PlayFab, Firebase, and Photon. Helped build and deploy Ghostlee, an AR social app with Firebase backend and localization support. Streamlined designer workflows via Firebase Remote Config for real-time updates without new builds.",
+      "Game programmer on UnderMire, a 4-player online co-op game coming to Steam, built on FishNet: gameplay features, art and animation integration, UI from designer references, and Arabic support in the team's localization system. Worked on and maintained Jawabak Jawabahom (2M+ users) using Unity/C#, PlayFab, Firebase, and Photon. Helped build and deploy Ghostlee, an AR social app with Firebase backend and localization support. Streamlined designer workflows via Firebase Remote Config for real-time updates without new builds.",
   },
   {
     company: "Tamatem Games",
@@ -21,7 +21,7 @@ const experiences = [
     role: "Game Development Intern",
     period: "Oct 2023 – Apr 2024",
     description:
-      "Collaborated in Unity networking stack migration; contributed reviewed PRs enhancing delivery speed. Gained experience with AWS, SignalR, RabbitMQ, and Microsoft Orleans in distributed game systems.",
+      "Contributed reviewed PRs improving stability in a live multi-service real-time backend, and supported a Unity networking stack migration across the client and its backing services.",
   },
   {
     company: "Ithraa Competition",

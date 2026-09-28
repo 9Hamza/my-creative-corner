@@ -3,10 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "UnderMire",
+    role: "Game Programmer at Table Knight Games",
+    description: "A 1–4 player online co-op roguelite coming to Steam, with a public demo out now. I implement gameplay features, integrate the art team's models, textures and animations, build UI from the UI designer's references, and made Arabic work in the team's localization system.",
+    tags: ["Unity", "C#", "FishNet", "DOTween", "Multiplayer", "PC / Steam"],
+    demo: "https://store.steampowered.com/app/3366370/UnderMire/",
+    image: "/UnderMireProject.jpg",
+  },
+  {
     title: "Jawabak Jawabahom",
     role: "Unity Game Developer at Table Knight Games",
     description: "Jawabak Jawabahom is a multiplayer trivia mobile game with over 2 million users. I'm contributing to the ongoing development, feature implementation, and maintenance of the live game.",
     tags: ["Unity", "C#", "PlayFab", "Firebase", "Photon", "Mobile", "Azure"],
+    demo: "https://play.google.com/store/apps/details?id=com.tableknightgames.JawabakJawabahom",
     image: "/JJ2024.png",
   },
   {
@@ -14,13 +23,14 @@ const projects = [
     role: "Unity Game Developer at Table Knight Games",
     description: "An AR social app with Firebase backend and full localization support. Built immersive augmented reality experiences for mobile devices that utilize real GPS data.",
     tags: ["Unity", "AR", "Firebase", "Localization", "Mobile"],
+    demo: "https://play.google.com/store/apps/details?id=com.tableknightgames.ghostlee",
     image: "/GhostleeProject.png",
   },
   {
     title: "Wanas",
     role: "Unity Game Developer at Tamatem Games",
     description: "Connected server authoritative game logic with the Unity frontend, ensuring smooth multiplayer experiences. Implemented new gameplay features. ",
-    tags: ["Unity", "C#", "Mobile", "AWS EC2", "SignalR", "Photon"],
+    tags: ["Unity", "C#", "Mobile", "AWS EC2", "Photon"],
     image: "/WanasProject.png",
   }
 ];
